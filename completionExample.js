@@ -1,8 +1,9 @@
-// This code is for v4 of the openai package: npmjs.com/package/openai
+require("dotenv").config();
+
 const OpenAI = require("openai");
 
 const openai = new OpenAI({
-    apiKey: "",
+    apiKey: process.env.OPENAI_KEY
 });
 
 async function testOpenAiCompletion(){
