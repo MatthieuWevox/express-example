@@ -5,7 +5,7 @@ let stableDiffusionUrl = "https://clipdrop-api.co/text-to-image/v1";
 
 // Send a post request with the header "x-api-key"
 // and the prompt in a form-data key
-let prompt = "A cat in a hat";
+let prompt = "A cat in a hat in Pixar style";
 
 let formData = new FormData();
 formData.append("prompt", prompt);
