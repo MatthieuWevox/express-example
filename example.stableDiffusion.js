@@ -21,7 +21,7 @@ let requestOptions = {
 
 fetch(stableDiffusionUrl, requestOptions).then((response) => {
     response.arrayBuffer().then((buffer) => {
-        let outputName = Math.random().toString(36).substring(7) + ".png";
+        let outputName = Math.random().toString(36) + ".png";
         fs.writeFile("./output/" + outputName, Buffer.from(buffer), () => {
             console.log("Saved output to ./output/" + outputName);
         });
