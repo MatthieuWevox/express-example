@@ -53,5 +53,7 @@ async function mainProgram() {
 }
 
 console.log("Début du programme");
-mainProgram();
+mainProgram().then(r => {
+    console.log("VRAIE fin du programme");
+});
 console.log("Fin du programme");
